@@ -8,7 +8,8 @@
 </p>
 
 ![image](public/ss1.PNG)
-
+## Description
+This is a web-based Library Management System built using the Laravel framework. The application allows to manage books, readers, loans and libraries efficiently, providing essential CRUD functionality to organize and maintain library resources.
 ## Clone the repository
 Start by cloning the repository to your local machine.
 
