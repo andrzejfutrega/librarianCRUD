@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-![image](https://github.com/andrzejfutrega/librarianCRUD/public/ss1.PNG)
+![image](public/ss1.PNG)
 
 ## Clone the repository
 Start by cloning the repository to your local machine.
