@@ -18,6 +18,11 @@ Use Composer to install the PHP dependencies for the project
 ```
 composer install
 ```
+
+## Add the vendor folder into your project directory
+```
+composer i
+```
 ## Set Up Environment File
 ```
 cp .env.example .env
