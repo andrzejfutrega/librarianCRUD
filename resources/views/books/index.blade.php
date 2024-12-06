@@ -26,7 +26,7 @@
                         <td>
                             <a href="{{ route('books.show', $book) }}" class="btn btn-info">Show</a>
                             <a href="{{ route('books.edit', $book) }}" class="btn btn-warning">Edit</a>
-                            <form action="{{ route('books.destroy', $book) }}" method="POST" style="display:inline;">
+                            <form action="{{ route('books.destroy', $book) }}" method="POST" style="display:inline;" onsubmit="return confirmDelete()">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Delete</button>
@@ -37,4 +37,6 @@
             </tbody>
         </table>
     </div>
+
+    
 @endsection

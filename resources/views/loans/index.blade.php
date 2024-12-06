@@ -24,7 +24,7 @@
                         <td>
                             <a href="{{ route('loans.show', $loan) }}" class="btn btn-info">Show</a>
                             <a href="{{ route('loans.edit', $loan) }}" class="btn btn-warning">Edit</a>
-                            <form action="{{ route('loans.destroy', $loan) }}" method="POST" style="display:inline;">
+                            <form action="{{ route('loans.destroy', $loan) }}" method="POST" style="display:inline;" onsubmit="return confirmDelete()">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Delete</button>

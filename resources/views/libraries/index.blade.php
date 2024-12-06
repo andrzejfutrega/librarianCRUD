@@ -22,7 +22,7 @@
                         <td>
                             <a href="{{ route('libraries.show', $library) }}" class="btn btn-info">Show</a>
                             <a href="{{ route('libraries.edit', $library) }}" class="btn btn-warning">Edit</a>
-                            <form action="{{ route('libraries.destroy', $library) }}" method="POST" style="display:inline;">
+                            <form action="{{ route('libraries.destroy', $library) }}" method="POST" style="display:inline;" onsubmit="return confirmDelete()">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Delete</button>

@@ -23,7 +23,7 @@
                         <td>
                             <a href="{{ route('readers.show', $reader) }}" class="btn btn-info">Show</a>
                             <a href="{{ route('readers.edit', $reader->id) }}" class="btn btn-warning">Edit</a>
-                            <form action="{{ route('readers.destroy', $reader->id) }}" method="POST" style="display:inline;">
+                            <form action="{{ route('readers.destroy', $reader->id) }}" method="POST" style="display:inline;" onsubmit="return confirmDelete()">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Delete</button>
